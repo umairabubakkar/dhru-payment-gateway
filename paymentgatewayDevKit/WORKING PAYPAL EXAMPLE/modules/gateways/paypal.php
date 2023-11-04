@@ -80,7 +80,7 @@ function paypal_link($params) {
     <input type="hidden" name="custom" value="' . $params['invoiceid'] . '">
     <input type="hidden" name="return" value="' . $params['returnurl'] . '&paymentsuccess=true">
     <input type="hidden" name="cancel_return" value="' . $params['returnurl'] . '&paymentfailed=true">
-    <input type="hidden" name="notify_url" value="' . $params['systemurl'] . '/modules/gateways/callback/paypal.php">
+    <input type="hidden" name="notify_url" value="' . $params['systemurl'] . '/modules/gateways/callback/paypalcallback.php">
     <input type="hidden" name="bn" value="DHRUFUSION">
     <input type="hidden" name="rm" value="2">
     <input type="submit" class="btn btn-success" value="' . $lng_languag["invoicespaynow"] . '" alt="' . $lng_languag["invoicespaynow"] . '">
